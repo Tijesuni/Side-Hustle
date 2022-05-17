@@ -1,0 +1,106 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Open+San:font-weight:@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:font-weight:@400;700&display=swap");*/
+
+body{
+    background-color: #fff;
+	margin:0px;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+.navWrapper{
+    display: flex;
+    background-color: hsl(217, 28%, 15%);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/*nav{
+    display: flex;
+	background-color: hsl(217, 28%, 15%);
+    overflow: hidden;
+}*/
+
+.wrapper .logo{
+ margin-top: 1px;
+ margin-left: 1px;
+}
+
+.mainMenu{
+    display: flex;
+}
+
+/*.mainMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.mainMenu li{
+    margin-left: 10px;
+    list-style-type: none;
+    justify-content: flex-end;
+}*/
+
+
+.navItem a{
+    display: block; 
+	float: left;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.navItem a:hover{
+    color: hsl(218, 28%, 18%);
+}
+
+.navItem a:active{
+    color: #fff;
+    background-color: hsl(217, 28%, 15%);
+}
+
+.mainMenu .closeMenu{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+
+    .mainMenu .navItem{
+        display: none;
+    }
+
+    .mainMenu .closeMenu{
+        float: right;
+        display: block;
+        color: #fff;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .mainMenu i{
+        font-size: 30px;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .mainMenu .responsive{
+        position: relative;
+    }
+
+    .mainMenu .responsive .closeMenu{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .mainMenu .responsive a{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
